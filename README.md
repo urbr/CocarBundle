@@ -12,7 +12,7 @@ Pré-requisitos:
 	- Instalação: apt-get install snmp rrdtool php5-snmp php5-json php-gd libicu-dev
 
 Instalação (Somente o Bundle):
-===============
+------------
 	1 – Adicione a seguinte linha ao seu composer.json
 	
 	//composer.json
