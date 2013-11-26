@@ -1,0 +1,14 @@
+parameters:
+#    cocar.example.class: Cocar\CocarBundle\Example
+
+services:
+#    cocar.example:
+#        class: %cocar.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+#services:
+#    cocar_graph:
+#        class: Cocar\CocarBundle\Controller\GraphController
+services:
+    cocar_monitor:
+        class: Cocar\CocarBundle\Controller\MonitorController
