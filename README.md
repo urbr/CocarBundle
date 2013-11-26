@@ -70,6 +70,8 @@ Instalação (Somente o Bundle):
 
 7 – Adicione os agendamentos ao cron.
 
+Atenção: Verifique os caminhos existentes em "schedules.txt" antes de adicioná-lo ao cron.
+
         crontab -u {usuario} schedules.txt
 
 Configuração:
