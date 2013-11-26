@@ -13,20 +13,32 @@ Pré-requisitos:
 
 Instalação (Somente o Bundle):
 ===============
-	1 – Clone o projeto do github.
-		Comando: git clone https://github.com/urucumbrasil/cocar.git
+	1 – Adicione a seguinte linha ao seu composer.json
 
-	2 – Configure os dados de acesso ao banco de dados em (app/config/parameters.yml).
-
-	3 – Crie um novo banco de dados.
-		Comando: php app/console doctrine:database:create
+	```js
+	//composer.json
+	{
+	    //...
 	
-	4 – Crie as tabelas do bundle.
-		Comandos: php app/console doctrine:schema:create
-
-	5 – Atualize e instale o composer.
+	    "require": {
+	        //...
+	        "gerenciador-redes/cocar-bundle": "dev-master"
+	    }
+	
+	    //...
+	}
+	```
+	2 – Atualize e instale o composer.
 		Comando: php composer.phar self-update
 		Comando: php composer.phar install
+	
+	3 – Configure os dados de acesso ao banco de dados em (app/config/parameters.yml).
+
+	4 – Crie um novo banco de dados.
+		Comando: php app/console doctrine:database:create
+	
+	5 – Crie as tabelas do bundle.
+		Comandos: php app/console doctrine:schema:create
 
 	6 – Instale os assets.
 		Comando: php app/console assetic:dump
