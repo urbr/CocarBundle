@@ -1,6 +1,6 @@
 <?php
 
-namespace Cocar\CocarBundle\Controller;
+namespace GerenciadorRedes\Bundle\CocarBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;

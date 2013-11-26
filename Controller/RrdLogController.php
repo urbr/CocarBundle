@@ -1,6 +1,6 @@
 <?php
 
-namespace Cocar\CocarBundle\Controller;
+namespace GerenciadorRedes\Bundle\CocarBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-use Cocar\CocarBundle\Entity\Rrd;
+use GerenciadorRedes\Bundle\CocarBundle\Entity\Rrd;
 
 class RrdLogController extends Controller
 {

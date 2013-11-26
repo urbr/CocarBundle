@@ -1,6 +1,6 @@
 <?php
 
-namespace Cocar\CocarBundle\Controller;
+namespace GerenciadorRedes\Bundle\CocarBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -9,8 +9,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-use Cocar\CocarBundle\Entity\Circuits;
-use Cocar\CocarBundle\Form\CircuitsType;
+use GerenciadorRedes\Bundle\CocarBundle\Entity\Circuits;
+use GerenciadorRedes\Bundle\CocarBundle\Form\CircuitsType;
 
 /**
  * Circuits controller.
@@ -31,7 +31,9 @@ class CircuitsController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entities = $em->getRepository('CocarBundle:Circuits')->findAll();
+        $entity = new Circuits();
+
+        $entities = $em->getRepository('GerenciadorRedes\Bundle\CocarBundle\Entity\Circuits')->findAll();
 
         return array(
             'entities' => $entities,

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cocar\CocarBundle\DependencyInjection;
+namespace GerenciadorRedes\Bundle\CocarBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

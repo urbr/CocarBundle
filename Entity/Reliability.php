@@ -1,6 +1,6 @@
 <?php
 
-namespace Cocar\CocarBundle\Entity;
+namespace GerenciadorRedes\Bundle\CocarBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Reliability
  *
  * @ORM\Table(name="tb_reliability")
- * @ORM\Entity(repositoryClass="Cocar\CocarBundle\Entity\ReliabilityRepository")
+ * @ORM\Entity(repositoryClass="GerenciadorRedes\Bundle\CocarBundle\Entity\ReliabilityRepository")
  */
 class Reliability
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cocar\CocarBundle;
+namespace GerenciadorRedes\Bundle\CocarBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

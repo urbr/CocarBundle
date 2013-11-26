@@ -1,6 +1,6 @@
 <?php
 
-namespace Cocar\CocarBundle\Entity;
+namespace GerenciadorRedes\Bundle\CocarBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 

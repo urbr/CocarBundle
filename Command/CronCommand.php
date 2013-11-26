@@ -1,6 +1,6 @@
 <?php
 
-namespace Cocar\CocarBundle\Command;
+namespace GerenciadorRedes\Bundle\CocarBundle\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;

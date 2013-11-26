@@ -1,6 +1,6 @@
 <?php
 
-namespace Cocar\CocarBundle\Entity;
+namespace GerenciadorRedes\Bundle\CocarBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\File\File;
  * Machine
  *
  * @ORM\Table(name="tb_machine")
- * @ORM\Entity(repositoryClass="Cocar\CocarBundle\Entity\MachineRepository")
+ * @ORM\Entity(repositoryClass="GerenciadorRedes\Bundle\CocarBundle\Entity\MachineRepository")
  */
 class Machine
 {
@@ -225,7 +225,7 @@ class Machine
      * @param \Cocar\CocarBundle\Entity\Circuits $gateway
      * @return Circuits
      */
-    public function setGateway(\Cocar\CocarBundle\Entity\Circuits $gateway = null)
+    public function setGateway(\GerenciadorRedes\Bundle\CocarBundle\Entity\Circuits $gateway = null)
     {
         $this->gateway = $gateway;
     
@@ -235,7 +235,7 @@ class Machine
     /**
      * Get gateway
      *
-     * @return \Cocar\CocarBundle\Entity\Circuits 
+     * @return \GerenciadorRedes\Bundle\CocarBundle\Entity\Circuits 
      */
     public function getGateway()
     {
