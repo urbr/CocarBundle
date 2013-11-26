@@ -15,8 +15,6 @@ Instalação (Somente o Bundle):
 ===============
 	1 – Adicione a seguinte linha ao seu composer.json
 	
-
-	```js
 	//composer.json
 	{
 	    //...
@@ -28,7 +26,6 @@ Instalação (Somente o Bundle):
 	
 	    //...
 	}
-	```
 	
 	2 – Atualize e instale o composer.
 		Comando: php composer.phar self-update
