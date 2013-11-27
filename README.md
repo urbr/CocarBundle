@@ -22,6 +22,13 @@ Instalação:
 
     "require": {
         //...
+	"jpgraph/jpgraph": "dev-master",
+        "symfony/class-loader": "2.2.*",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "friendsofsymfony/rest-bundle": "dev-master",
+        "jms/serializer": "0.14.*@dev",
+        "jms/serializer-bundle": "0.13.*@dev",
+        "knplabs/knp-paginator-bundle": "dev-master",
         "gerenciador-redes/cocar-bundle": "dev-master"
     }
 
@@ -58,8 +65,8 @@ Instalação:
 
 6 – Instale os assets.
 
+        php app/console assets:install
         php app/console assetic:dump
-        php app/console assets:install –symlink
 
 7 – Adicione os agendamentos ao cron.
 
