@@ -1,7 +1,7 @@
 Cocar
 ===============
 
-Descrição: Symfony2 + Cocar
+Descrição: CocarBundle
 
 Pré-requisitos:
 ===============
@@ -11,7 +11,7 @@ Pré-requisitos:
 
 	- Instalação: apt-get install snmp rrdtool php5-snmp php5-json php-gd libicu-dev
 
-Instalação (Somente o Bundle):
+Instalação:
 ------------
 
 1 – Adicione a seguinte linha ao seu composer.json
@@ -29,10 +29,9 @@ Instalação (Somente o Bundle):
 }
 ```
 	
-2 – Atualize e instale o composer.
+2 – Atualize o composer.
 
-        php composer.phar self-update
-        php composer.phar install
+        php composer.phar update
 
 3 - Adicione o CocarBundle ao seu AppKernel.php
 ```php
@@ -53,15 +52,9 @@ Instalação (Somente o Bundle):
             prefix:   /
 ```
 
-4 – Configure os dados de acesso ao banco de dados em (app/config/parameters.yml).
+5 – Crie as tabelas do CocarBundle.
 
-4 – Crie um novo banco de dados.
-
-        php app/console doctrine:database:create
-
-5 – Crie as tabelas do bundle.
-
-        php app/console doctrine:schema:create
+        php app/console doctrine:schema:update --force
 
 6 – Instale os assets.
 
